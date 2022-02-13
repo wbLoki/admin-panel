@@ -14,7 +14,9 @@ function Row({ data }) {
       <td>
         <Edit id={id} />
       </td>
-      <td>{/* <Delete /> */}</td>
+      <td>
+        <Delete id={id} />
+      </td>
     </tr>
   );
 }

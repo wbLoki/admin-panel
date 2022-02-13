@@ -16,11 +16,12 @@ function Table() {
       url: apiUrl,
     }).then((res) => {
       console.log(res.data);
-      dispatch(addUser(res.data));
+      setUsers(res.data);
+      // dispatch(addUser(res.data));
     });
   }, []);
 
-  setUsers(useSelector((state) => state.users));
+  // setUsers(useSelector((state) => state.users));
   console.log(users);
 
   return (
